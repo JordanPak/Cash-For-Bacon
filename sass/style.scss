@@ -87,9 +87,9 @@ header {
 	width: 100%;
 	height: 393px;
 	background: $bg-blue-light;
-	background: -moz-linear-gradient(top, $bg-blue-dark 0%, $bg-blue-light 13%);
-	background: -webkit-linear-gradient(top, $bg-blue-dark 0%, $bg-blue-light 13%);
-	background: linear-gradient(to bottom, $bg-blue-dark 0%, $bg-blue-light 13%);
+	background: -moz-linear-gradient( top, $bg-blue-dark 0%, $bg-blue-light 13% );
+	background: -webkit-linear-gradient( top, $bg-blue-dark 0%, $bg-blue-light 13% );
+	background: linear-gradient( to bottom, $bg-blue-dark 0%, $bg-blue-light 13% );
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B5BBC5', endColorstr='#D8E0EC',GradientType=0 );
 
 } // #girl-bacon
