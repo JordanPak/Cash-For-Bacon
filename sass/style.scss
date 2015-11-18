@@ -95,13 +95,26 @@ header {
 	background: linear-gradient( to bottom, $bg-blue-dark 0%, $bg-blue-light 13% );
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B5BBC5', endColorstr='#D8E0EC',GradientType=0 );
 
+	.wrap {
+		position: relative;
+	}
+
 } // #girl-bacon
 
+#bacon-img {
+	position: absolute;
+	top: 25px;
+	right: 0;
+	width: 684px;
+	height: 354px;
+	background: url('images/c4b-sprite.png') top left no-repeat;
+}
+
 #girl-img {
-	position: relative;
+	position: absolute;
 	top: -172px;
 	left: -65px;
 	width: 494px;
 	height: 596px;
-	background: url('images/c4b-sprite.png') 0 -354px;
+	background: url('images/c4b-sprite.png') 0 -354px no-repeat;
 }
