@@ -165,6 +165,49 @@ main {
 } // main
 
 
+//-- QUESTIONS --//
+#questions {
+	margin: 12px 15px;
+	padding: 17px 0;
+	border-top: $divider-blue;
+	border-bottom: $divider-blue;
+	list-style-type: none;
+	font-size: 26px;
+	font-weight: 800;
+	line-height: 24px;
+	color: $text-gray;
+	text-transform: uppercase;
+
+	@include clearfix();
+
+	li {
+		float: left;
+		margin: 0 11px;
+		padding: 0;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+
+			span {
+				letter-spacing: -0.03em;
+			}
+		}
+
+	} // li
+
+	span {
+		font-size: 21px;
+		color: $text-red;
+		text-transform: none;
+	}
+
+} // #questions
+
+
 //-- CLEARFIX --//
 .clearfix {
 	@include clearfix();
