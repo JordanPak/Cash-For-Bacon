@@ -64,7 +64,7 @@ h1 {
 
 
 // WRAPS //
-.wrap, #main-content-wrap {
+.wrap, main {
 	// background: rgba(0,0,255,0.25);
 	margin: 0 auto;
 	max-width: 964px;
@@ -119,9 +119,19 @@ header {
 	background: $sprite 0 -354px no-repeat;
 }
 
+
+//-- MAIN CONTENT --//
+#main-content-wrap {
+	background: $bg-gray-dark;
+	background: -moz-linear-gradient( top,  $bg-gray-dark 0%, $bg-gray-darker 100% );
+	background: -webkit-linear-gradient( top,  $bg-gray-dark 0%,$bg-gray-darker 100% );
+	background: linear-gradient( to bottom,  $bg-gray-dark 0%,$bg-gray-darker 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D3D3D', endColorstr='#101010',GradientType=0 );
+}
+
 main {
 	position: relative;
-	margin-top: -20px;
+	top: -20px;
 	background: $diag-bg-pattern;
 	-moz-border-radius: 12px;
 	border-radius: 12px;

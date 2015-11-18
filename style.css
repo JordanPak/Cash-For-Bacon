@@ -405,7 +405,7 @@ h1 {
     font-weight: 800;
     letter-spacing: -0.06em; }
 
-.wrap, #main-content-wrap {
+.wrap, main {
   margin: 0 auto;
   max-width: 964px; }
 
@@ -444,9 +444,16 @@ header {
   height: 596px;
   background: url("images/c4b-sprite.png") 0 -354px no-repeat; }
 
+#main-content-wrap {
+  background: #3D3D3D;
+  background: -moz-linear-gradient(top, #3D3D3D 0%, #101010 100%);
+  background: -webkit-linear-gradient(top, #3D3D3D 0%, #101010 100%);
+  background: linear-gradient(to bottom, #3D3D3D 0%, #101010 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D3D3D', endColorstr='#101010',GradientType=0 ); }
+
 main {
   position: relative;
-  margin-top: -20px;
+  top: -20px;
   background: url("images/diag-bg-pattern.png");
   -moz-border-radius: 12px;
   border-radius: 12px;
