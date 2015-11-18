@@ -8,6 +8,7 @@
 // INCLUDES //
 @import 'normalize';
 @import 'variables';
+@import 'mixins';
 
 
 // UTILITIES //
@@ -136,4 +137,10 @@ main {
 	-moz-border-radius: 12px;
 	border-radius: 12px;
 	border: 2px solid $black;
+}
+
+
+//-- CLEARFIX --//
+.clearfix {
+	@include clearfix();
 }

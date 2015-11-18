@@ -366,6 +366,10 @@ th {
 	CASH FOR BACON
 	Variables
 */
+/*
+	CASH FOR BACON
+	Mixins
+*/
 *::selection {
   background: #E63B2C;
   color: #FFFFFF; }
@@ -458,5 +462,13 @@ main {
   -moz-border-radius: 12px;
   border-radius: 12px;
   border: 2px solid #000000; }
+
+.clearfix:before {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: table; }
 
 /*# sourceMappingURL=style.css.map */

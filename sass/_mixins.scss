@@ -1,0 +1,23 @@
+/*
+	CASH FOR BACON
+	Mixins
+*/
+
+//============//
+//  CLEARFIX  //
+//============//
+
+@mixin clearfix() {
+
+    &:before {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+        content: " ";
+        display: table;
+    }
+
+} // clearfix()
