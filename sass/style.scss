@@ -10,7 +10,7 @@
 @import 'variables';
 
 
-// SELECTIONS //
+// UTILITIES //
 *::selection {
 	background: $text-red;
 	color: $white;
@@ -20,6 +20,11 @@
 	background: $text-red;
 	color: $white;
 }
+
+div, header, main {
+	display: block;
+}
+
 
 // BODY //
 body {
@@ -68,7 +73,6 @@ h1 {
 
 // HEADER //
 header {
-	display: block;
 	width: 100%;
 	height: 183px;
 	background-image: url('images/c4b-sprite.png');
@@ -83,7 +87,6 @@ header {
 
 // GIRL & BACON //
 #girl-bacon {
-	display: block;
 	width: 100%;
 	height: 393px;
 	background: $bg-blue-light;
@@ -93,3 +96,12 @@ header {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B5BBC5', endColorstr='#D8E0EC',GradientType=0 );
 
 } // #girl-bacon
+
+#girl-img {
+	position: relative;
+	top: -172px;
+	left: -65px;
+	width: 494px;
+	height: 596px;
+	background: url('images/c4b-sprite.png') 0 -354px;
+}

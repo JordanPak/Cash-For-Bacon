@@ -374,6 +374,9 @@ th {
   background: #E63B2C;
   color: #FFFFFF; }
 
+div, header, main {
+  display: block; }
+
 body {
   background: #101010;
   font-family: 'Open Sans', sans-serif;
@@ -407,7 +410,6 @@ h1 {
   max-width: 964px; }
 
 header {
-  display: block;
   width: 100%;
   height: 183px;
   background-image: url("images/c4b-sprite.png");
@@ -416,7 +418,6 @@ header {
     padding: 32px; }
 
 #girl-bacon {
-  display: block;
   width: 100%;
   height: 393px;
   background: #D8E0EC;
@@ -424,5 +425,13 @@ header {
   background: -webkit-linear-gradient(top, #B5BCC6 0%, #D8E0EC 13%);
   background: linear-gradient(to bottom, #B5BCC6 0%, #D8E0EC 13%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B5BBC5', endColorstr='#D8E0EC',GradientType=0 ); }
+
+#girl-img {
+  position: relative;
+  top: -172px;
+  left: -65px;
+  width: 494px;
+  height: 596px;
+  background: url("images/c4b-sprite.png") 0 -354px; }
 
 /*# sourceMappingURL=style.css.map */
