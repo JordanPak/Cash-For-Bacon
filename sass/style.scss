@@ -211,6 +211,7 @@ main {
 //-- LOGO & CALL TO ACTION --//
 #logo-cta {
 	@include clearfix();
+	text-align: left;
 }
 
 #logo {
@@ -219,6 +220,28 @@ main {
 	width: 346px;
 	height: 105px;
 	background: $sprite 0 -950px no-repeat;
+}
+
+#call {
+	float: left;
+	margin: 6px 0 0 55px;
+	padding: 12px;
+	background: $white;
+	border: 2px solid $text-red;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 5px 5px 25px rgba( 0, 0, 0, 0.2 );
+	box-shadow: 5px 5px 25px rgba( 0, 0, 0, 0.2 );
+}
+
+#phone-img {
+	display: inline-block;
+	position: relative;
+	top: -42px;
+	left: -40px;
+	width: 152px;
+	height: 139px;
+	background: $sprite 0 -1055px no-repeat;
 }
 
 //-- CLEARFIX --//

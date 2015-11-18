@@ -513,13 +513,15 @@ main {
     color: #E63B2C;
     text-transform: none; }
 
-#logo-cta:before {
-  content: " ";
-  display: table; }
-#logo-cta:after {
-  clear: both;
-  content: " ";
-  display: table; }
+#logo-cta {
+  text-align: left; }
+  #logo-cta:before {
+    content: " ";
+    display: table; }
+  #logo-cta:after {
+    clear: both;
+    content: " ";
+    display: table; }
 
 #logo {
   float: left;
@@ -527,6 +529,26 @@ main {
   width: 346px;
   height: 105px;
   background: url("images/c4b-sprite.png") 0 -950px no-repeat; }
+
+#call {
+  float: left;
+  margin: 6px 0 0 55px;
+  padding: 12px;
+  background: #FFFFFF;
+  border: 2px solid #E63B2C;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2); }
+
+#phone-img {
+  display: inline-block;
+  position: relative;
+  top: -42px;
+  left: -40px;
+  width: 152px;
+  height: 139px;
+  background: url("images/c4b-sprite.png") 0 -1055px no-repeat; }
 
 .clearfix:before {
   content: " ";
