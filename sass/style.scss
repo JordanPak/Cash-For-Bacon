@@ -11,3 +11,8 @@
 // Variables & Mixins
 @import 'variables';
 // @import 'mixins';
+
+
+body {
+	background: $bg-gray-darker;
+}
