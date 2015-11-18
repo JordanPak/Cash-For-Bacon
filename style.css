@@ -372,4 +372,39 @@ body {
   color: #5A6468;
   text-align: center; }
 
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.08em; }
+
+h1 {
+  display: block;
+  font-size: 60px;
+  line-height: 40px;
+  font-weight: 600;
+  font-style: italic;
+  text-align: right;
+  color: #E63B2C; }
+  h1 span {
+    font-size: 86px;
+    line-height: 85px;
+    color: #5A6468;
+    font-weight: 800;
+    letter-spacing: -0.06em; }
+
+.wrap {
+  margin: 0 auto;
+  max-width: 964px; }
+
+header {
+  display: block;
+  width: 100%;
+  height: 183px;
+  background-image: url("images/c4b-sprite.png");
+  background-position: bottom; }
+  header .wrap {
+    padding: 32px; }
+
 /*# sourceMappingURL=style.css.map */
