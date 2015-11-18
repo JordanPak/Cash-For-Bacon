@@ -5,17 +5,17 @@
 	11/18/2015
 */
 
-// Mormalize
+// INCLUDES //
 @import 'normalize';
-
-// Variables & Mixins
 @import 'variables';
-// @import 'mixins';
 
 
+// BODY //
 body {
 	background: $bg-gray-darker;
 	font-family: 'Open Sans', sans-serif;
 	color: $text-gray;
 	text-align: center;
 }
+
+// HEADER //
