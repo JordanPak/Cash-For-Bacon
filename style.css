@@ -379,6 +379,10 @@ th {
   color: #FFFFFF; }
 
 div, header, main {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+div, header, main {
   display: block; }
 
 body {
@@ -458,10 +462,23 @@ header {
 main {
   position: relative;
   top: -20px;
+  padding: 12px;
   background: url("images/diag-bg-pattern.png");
   -moz-border-radius: 12px;
   border-radius: 12px;
   border: 2px solid #000000; }
+  main h2 {
+    font-size: 79px;
+    line-height: 79px;
+    color: #E63B2C; }
+  main h3 {
+    font-size: 49px;
+    line-height: 58px;
+    letter-spacing: -3px; }
+  main h4 {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: -1px; }
 
 .clearfix:before {
   content: " ";
