@@ -118,3 +118,12 @@ header {
 	height: 596px;
 	background: $sprite 0 -354px no-repeat;
 }
+
+main {
+	position: relative;
+	margin-top: -20px;
+	background: $diag-bg-pattern;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	border: 2px solid $black;
+}

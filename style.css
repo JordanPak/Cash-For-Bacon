@@ -444,4 +444,12 @@ header {
   height: 596px;
   background: url("images/c4b-sprite.png") 0 -354px no-repeat; }
 
+main {
+  position: relative;
+  margin-top: -20px;
+  background: url("images/diag-bg-pattern.png");
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  border: 2px solid #000000; }
+
 /*# sourceMappingURL=style.css.map */
