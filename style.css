@@ -513,6 +513,21 @@ main {
     color: #E63B2C;
     text-transform: none; }
 
+#logo-cta:before {
+  content: " ";
+  display: table; }
+#logo-cta:after {
+  clear: both;
+  content: " ";
+  display: table; }
+
+#logo {
+  float: left;
+  margin: 4px 0 0 30px;
+  width: 346px;
+  height: 105px;
+  background: url("images/c4b-sprite.png") 0 -950px no-repeat; }
+
 .clearfix:before {
   content: " ";
   display: table; }

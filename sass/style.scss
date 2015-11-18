@@ -208,6 +208,19 @@ main {
 } // #questions
 
 
+//-- LOGO & CALL TO ACTION --//
+#logo-cta {
+	@include clearfix();
+}
+
+#logo {
+	float: left;
+	margin: 4px 0 0 30px;
+	width: 346px;
+	height: 105px;
+	background: $sprite 0 -950px no-repeat;
+}
+
 //-- CLEARFIX --//
 .clearfix {
 	@include clearfix();
