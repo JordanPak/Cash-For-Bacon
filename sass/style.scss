@@ -10,6 +10,17 @@
 @import 'variables';
 
 
+// SELECTIONS //
+*::selection {
+	background: $text-red;
+	color: $white;
+}
+
+*::-moz-selection {
+	background: $text-red;
+	color: $white;
+}
+
 // BODY //
 body {
 	background: $bg-gray-darker;

@@ -366,6 +366,14 @@ th {
 	CASH FOR BACON
 	Variables
 */
+*::selection {
+  background: #E63B2C;
+  color: #FFFFFF; }
+
+*::-moz-selection {
+  background: #E63B2C;
+  color: #FFFFFF; }
+
 body {
   background: #101010;
   font-family: 'Open Sans', sans-serif;
