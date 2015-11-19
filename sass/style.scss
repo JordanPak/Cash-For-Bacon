@@ -72,6 +72,28 @@ h1 {
 		text-align: center;
 	}
 
+	@include breakpoint( sm ) {
+		display: block;
+		line-height: 50px;
+
+		span {
+			display: block;
+			margin-top: 20px;
+			line-height: 75px;
+		}
+
+	} // BP: sm
+
+	@include breakpoint( xs ) {
+		font-size: 46px;
+
+		span {
+			margin-top: 10px;
+			font-size: 62px;
+			line-height: 58px;
+		}
+	}
+
 } // h1
 
 
@@ -110,6 +132,18 @@ header {
 	.wrap {
 		padding: 32px;
 	}
+
+	@include breakpoint( sm ) {
+		height: auto;
+		background-image: $diag-bg-pattern;
+		border-top: 2px solid $text-red;
+		border-bottom: 2px solid $text-red;
+
+		.wrap {
+			padding: 24px 0;
+		}
+
+	} // BP: sm
 
 } // header
 
@@ -165,6 +199,10 @@ header {
 	@include breakpoint( med ) {
 		top: -40px;
 		left: -100px;
+	}
+
+	@include breakpoint( sm ) {
+		top: -20px;
 	}
 
 } // #girl-img

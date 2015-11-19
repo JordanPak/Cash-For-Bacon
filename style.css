@@ -444,6 +444,21 @@ h1 {
   @media (max-width: 1024px) {
     h1 {
       text-align: center; } }
+  @media (max-width: 860px) {
+    h1 {
+      display: block;
+      line-height: 50px; }
+      h1 span {
+        display: block;
+        margin-top: 20px;
+        line-height: 75px; } }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 46px; }
+      h1 span {
+        margin-top: 10px;
+        font-size: 62px;
+        line-height: 58px; } }
 
 .wrap, main {
   margin: 0 auto;
@@ -468,6 +483,14 @@ header {
   background-position: bottom; }
   header .wrap {
     padding: 32px; }
+  @media (max-width: 860px) {
+    header {
+      height: auto;
+      background-image: url("images/diag-bg-pattern.png");
+      border-top: 2px solid #E63B2C;
+      border-bottom: 2px solid #E63B2C; }
+      header .wrap {
+        padding: 24px 0; } }
 
 #girl-bacon {
   width: 100%;
@@ -510,6 +533,9 @@ header {
     #girl-img {
       top: -40px;
       left: -100px; } }
+  @media (max-width: 860px) {
+    #girl-img {
+      top: -20px; } }
 
 #main-content-wrap {
   margin-bottom: 50px;
