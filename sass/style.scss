@@ -9,6 +9,8 @@
 @import 'normalize';
 @import 'variables';
 @import 'mixins';
+@import 'breakpoints';
+
 
 
 // UTILITIES //
@@ -66,15 +68,59 @@ h1 {
 		letter-spacing: -0.06em;
 	}
 
+	@include breakpoint( med ) {
+		text-align: center;
+	}
+
+	@include breakpoint( sm ) {
+		display: block;
+		line-height: 50px;
+
+		span {
+			display: block;
+			margin-top: 20px;
+			line-height: 75px;
+		}
+
+	} // BP: SM
+
+	@include breakpoint( xs-sm ) {
+		font-size: 46px;
+
+		span {
+			margin-top: 10px;
+			font-size: 62px;
+			line-height: 58px;
+		}
+
+	} // BP: XS-SM
+
 } // h1
 
 
 // WRAPS //
 .wrap, main {
-	// background: rgba(0,0,255,0.25);
+	// background: rgba(0,0,255,0.25) !important;
 	margin: 0 auto;
 	max-width: 964px;
-}
+
+	@include breakpoint( med-lg ) {
+		max-width: $bp-med-lg-wrap;
+	}
+
+	@include breakpoint( med ) {
+		max-width: $bp-med-wrap;
+	}
+
+	@include breakpoint( sm ) {
+		width: $bp-sm-wrap;
+	}
+
+	@include breakpoint( xs ) {
+		width: $bp-xs-wrap;
+	}
+
+} // .wrap, main
 
 
 // HEADER //
@@ -87,6 +133,18 @@ header {
 	.wrap {
 		padding: 32px;
 	}
+
+	@include breakpoint( sm ) {
+		height: auto;
+		background-image: $diag-bg-pattern;
+		border-top: 2px solid $text-red;
+		border-bottom: 2px solid $text-red;
+
+		.wrap {
+			padding: 24px 0;
+		}
+
+	} // BP: sm
 
 } // header
 
@@ -105,6 +163,10 @@ header {
 		position: relative;
 	}
 
+	@include breakpoint( med ) {
+		overflow: hidden;
+	}
+
 } // #girl-bacon
 
 #bacon-img {
@@ -112,18 +174,44 @@ header {
 	top: 25px;
 	right: 0;
 	width: 684px;
-	height: 354px;
+	height: 0;
+	padding-bottom: 354px;
 	background: $sprite top left no-repeat;
-}
+
+	@include breakpoint( med ) {
+		top: 40px;
+		right: -180px;
+	}
+
+	@include breakpoint( sm ) {
+		right: -320px;
+	}
+
+	@include breakpoint( xs ) {
+		right: -440px;
+	}
+
+} // #bacon-img
 
 #girl-img {
 	position: absolute;
 	top: -172px;
 	left: -65px;
 	width: 494px;
-	height: 596px;
+	height: 0;
+	padding-bottom: 596px;
 	background: $sprite 0 -354px no-repeat;
-}
+
+	@include breakpoint( med ) {
+		top: -40px;
+		left: -100px;
+	}
+
+	@include breakpoint( sm ) {
+		top: -20px;
+	}
+
+} // #girl-img
 
 
 //-- MAIN CONTENT --//
@@ -163,6 +251,44 @@ main {
 		letter-spacing: -1px;
 	}
 
+	@include breakpoint( sm ) {
+		padding: 15px;
+
+		h2 {
+			margin-bottom: 10px;
+			font-size: 68px;
+			line-height: 68px;
+		}
+
+		h3 {
+			margin-bottom: 15px;
+			font-size: 42px;
+			line-height: 40px;
+		}
+
+		h4 {
+			font-size: 26px;
+			line-height: 28px;
+		}
+
+	} // BP: SM
+
+	@include breakpoint( xs-sm ) {
+
+		h2 {
+			margin-bottom: 16px;
+			font-size: 54px;
+			line-height: 54px;
+		}
+
+		h3 {
+			margin-bottom: 16px;
+			font-size: 36px;
+			line-height: 34px;
+		}
+
+	} // BP: XS-SM
+
 } // main
 
 
@@ -181,6 +307,10 @@ main {
 
 	@include clearfix();
 
+	@include breakpoint( xs-sm ) {
+		margin: 20px 15px;
+	}
+
 	li {
 		float: left;
 		margin: 0 11px;
@@ -197,6 +327,29 @@ main {
 				letter-spacing: -0.03em;
 			}
 		}
+
+		@include breakpoint( med ) {
+			margin: 14px 0;
+			margin-left: 2.5%;
+			margin-right: 2.5%;
+			width: 45%;
+
+			&:first-child, &:last-child {
+				margin-left: 2.5%;
+				margin-right: 2.5%;
+			}
+
+		} // BP: Med
+
+		@include breakpoint( xs-sm ) {
+			margin: 16px 0;
+			width: 100%;
+
+			&:first-child, &:last-child {
+				margin: 16px 0;
+			}
+
+		} // BP: XS-SM
 
 	} // li
 
@@ -223,7 +376,13 @@ main {
 	width: 346px;
 	height: 105px;
 	background: $sprite 0 -950px no-repeat;
-}
+
+	@include breakpoint( med ) {
+		float: none;
+		margin: 20px auto;
+	}
+
+} // #logo
 
 #call {
 	position: relative;
@@ -250,6 +409,43 @@ main {
 
 	} // h3
 
+	@include breakpoint( med ) {
+		float: none;
+		margin: 50px auto 20px auto;
+		width: 450px;
+	}
+
+	@include breakpoint( xs ) {
+		width: 90%;
+		padding: 0px 10px 5px 10px;
+		text-align: center;
+
+		h3 {
+			font-size: 34px;
+
+			span {
+				font-size: 40px;
+				line-height: 38px
+			}
+
+		}
+
+	} // BP: XS
+
+	@include breakpoint( xxs ) {
+
+		h3 {
+			font-size: 30px;
+			line-height: 30px;
+
+			span {
+				font-size: 35px;
+			}
+
+		} // h3
+
+	} // BP: XXS
+
 } // #call
 
 #phone-img {
@@ -260,7 +456,13 @@ main {
 	width: 152px;
 	height: 139px;
 	background: $sprite 0 -1055px no-repeat;
-}
+
+	@include breakpoint( xs ) {
+		position: static;
+		margin-top: 10px;
+	}
+
+} // #phone-img
 
 //-- CLEARFIX --//
 .clearfix {

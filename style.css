@@ -370,6 +370,10 @@ th {
 	CASH FOR BACON
 	Mixins
 */
+/*
+	CASH FOR BACON
+	Breakpoints
+*/
 *::selection {
   background: #E63B2C;
   color: #FFFFFF; }
@@ -412,10 +416,40 @@ h1 {
     color: #5A6468;
     font-weight: 800;
     letter-spacing: -0.06em; }
+  @media (max-width: 1024px) {
+    h1 {
+      text-align: center; } }
+  @media (max-width: 860px) {
+    h1 {
+      display: block;
+      line-height: 50px; }
+      h1 span {
+        display: block;
+        margin-top: 20px;
+        line-height: 75px; } }
+  @media (max-width: 740px) {
+    h1 {
+      font-size: 46px; }
+      h1 span {
+        margin-top: 10px;
+        font-size: 62px;
+        line-height: 58px; } }
 
 .wrap, main {
   margin: 0 auto;
   max-width: 964px; }
+  @media (max-width: 1080px) {
+    .wrap, main {
+      max-width: 960px; } }
+  @media (max-width: 1024px) {
+    .wrap, main {
+      max-width: 800px; } }
+  @media (max-width: 860px) {
+    .wrap, main {
+      width: 90%; } }
+  @media (max-width: 600px) {
+    .wrap, main {
+      width: 90%; } }
 
 header {
   width: 100%;
@@ -424,6 +458,14 @@ header {
   background-position: bottom; }
   header .wrap {
     padding: 32px; }
+  @media (max-width: 860px) {
+    header {
+      height: auto;
+      background-image: url("images/diag-bg-pattern.png");
+      border-top: 2px solid #E63B2C;
+      border-bottom: 2px solid #E63B2C; }
+      header .wrap {
+        padding: 24px 0; } }
 
 #girl-bacon {
   width: 100%;
@@ -435,22 +477,44 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B5BBC5', endColorstr='#D8E0EC',GradientType=0 ); }
   #girl-bacon .wrap {
     position: relative; }
+  @media (max-width: 1024px) {
+    #girl-bacon {
+      overflow: hidden; } }
 
 #bacon-img {
   position: absolute;
   top: 25px;
   right: 0;
   width: 684px;
-  height: 354px;
+  height: 0;
+  padding-bottom: 354px;
   background: url("images/c4b-sprite.png") top left no-repeat; }
+  @media (max-width: 1024px) {
+    #bacon-img {
+      top: 40px;
+      right: -180px; } }
+  @media (max-width: 860px) {
+    #bacon-img {
+      right: -320px; } }
+  @media (max-width: 600px) {
+    #bacon-img {
+      right: -440px; } }
 
 #girl-img {
   position: absolute;
   top: -172px;
   left: -65px;
   width: 494px;
-  height: 596px;
+  height: 0;
+  padding-bottom: 596px;
   background: url("images/c4b-sprite.png") 0 -354px no-repeat; }
+  @media (max-width: 1024px) {
+    #girl-img {
+      top: -40px;
+      left: -100px; } }
+  @media (max-width: 860px) {
+    #girl-img {
+      top: -20px; } }
 
 #main-content-wrap {
   margin-bottom: 50px;
@@ -480,6 +544,29 @@ main {
     font-size: 30px;
     line-height: 42px;
     letter-spacing: -1px; }
+  @media (max-width: 860px) {
+    main {
+      padding: 15px; }
+      main h2 {
+        margin-bottom: 10px;
+        font-size: 68px;
+        line-height: 68px; }
+      main h3 {
+        margin-bottom: 15px;
+        font-size: 42px;
+        line-height: 40px; }
+      main h4 {
+        font-size: 26px;
+        line-height: 28px; } }
+  @media (max-width: 740px) {
+    main h2 {
+      margin-bottom: 16px;
+      font-size: 54px;
+      line-height: 54px; }
+    main h3 {
+      margin-bottom: 16px;
+      font-size: 36px;
+      line-height: 34px; } }
 
 #questions {
   margin: 12px 15px;
@@ -499,6 +586,9 @@ main {
     clear: both;
     content: " ";
     display: table; }
+  @media (max-width: 740px) {
+    #questions {
+      margin: 20px 15px; } }
   #questions li {
     float: left;
     margin: 0 11px;
@@ -509,6 +599,21 @@ main {
       margin-right: 0; }
       #questions li:last-child span {
         letter-spacing: -0.03em; }
+    @media (max-width: 1024px) {
+      #questions li {
+        margin: 14px 0;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 45%; }
+        #questions li:first-child, #questions li:last-child {
+          margin-left: 2.5%;
+          margin-right: 2.5%; } }
+    @media (max-width: 740px) {
+      #questions li {
+        margin: 16px 0;
+        width: 100%; }
+        #questions li:first-child, #questions li:last-child {
+          margin: 16px 0; } }
   #questions span {
     font-size: 21px;
     color: #E63B2C;
@@ -531,6 +636,10 @@ main {
   width: 346px;
   height: 105px;
   background: url("images/c4b-sprite.png") 0 -950px no-repeat; }
+  @media (max-width: 1024px) {
+    #logo {
+      float: none;
+      margin: 20px auto; } }
 
 #call {
   position: relative;
@@ -551,6 +660,27 @@ main {
       font-size: 47px;
       color: #E63B2C;
       letter-spacing: 0.003em; }
+  @media (max-width: 1024px) {
+    #call {
+      float: none;
+      margin: 50px auto 20px auto;
+      width: 450px; } }
+  @media (max-width: 600px) {
+    #call {
+      width: 90%;
+      padding: 0px 10px 5px 10px;
+      text-align: center; }
+      #call h3 {
+        font-size: 34px; }
+        #call h3 span {
+          font-size: 40px;
+          line-height: 38px; } }
+  @media (max-width: 460px) {
+    #call h3 {
+      font-size: 30px;
+      line-height: 30px; }
+      #call h3 span {
+        font-size: 35px; } }
 
 #phone-img {
   display: inline-block;
@@ -560,6 +690,10 @@ main {
   width: 152px;
   height: 139px;
   background: url("images/c4b-sprite.png") 0 -1055px no-repeat; }
+  @media (max-width: 600px) {
+    #phone-img {
+      position: static;
+      margin-top: 10px; } }
 
 .clearfix:before {
   content: " ";
