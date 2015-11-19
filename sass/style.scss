@@ -68,6 +68,10 @@ h1 {
 		letter-spacing: -0.06em;
 	}
 
+	@include breakpoint( med ) {
+		text-align: center;
+	}
+
 } // h1
 
 
@@ -142,6 +146,12 @@ header {
 	width: 494px;
 	height: 596px;
 	background: $sprite 0 -354px no-repeat;
+
+	@include breakpoint( med ) {
+		top: -20px;
+		left: -100px;
+	}
+
 } // #girl-img
 
 
