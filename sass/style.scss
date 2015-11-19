@@ -163,6 +163,10 @@ header {
 		position: relative;
 	}
 
+	@include breakpoint( med ) {
+		overflow: hidden;
+	}
+
 } // #girl-bacon
 
 #bacon-img {
@@ -170,7 +174,8 @@ header {
 	top: 25px;
 	right: 0;
 	width: 684px;
-	height: 354px;
+	height: 0;
+	padding-bottom: 354px;
 	background: $sprite top left no-repeat;
 
 	@include breakpoint( med ) {
@@ -427,6 +432,20 @@ main {
 
 	} // BP: XS
 
+	@include breakpoint( xxs ) {
+
+		h3 {
+			font-size: 30px;
+			line-height: 30px;
+
+			span {
+				font-size: 35px;
+			}
+
+		} // h3
+
+	} // BP: XXS
+
 } // #call
 
 #phone-img {
@@ -443,7 +462,7 @@ main {
 		margin-top: 10px;
 	}
 
-} #phone-img
+} // #phone-img
 
 //-- CLEARFIX --//
 .clearfix {

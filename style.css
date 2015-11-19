@@ -374,34 +374,6 @@ th {
 	CASH FOR BACON
 	Breakpoints
 */
-@media (min-width: 1920px) {
-  .wrap, .site-inner {
-    background-color: rgba(255, 255, 0, 0.5); } }
-@media (max-width: 1500px) {
-  .wrap, .site-inner {
-    background-color: rgba(255, 0, 0, 0.4); } }
-@media (max-width: 1260px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 0, 255, 0.4); } }
-@media (max-width: 1080px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 128, 0, 0.4); } }
-@media (max-width: 1024px) {
-  .wrap, .site-inner {
-    background-color: rgba(128, 0, 128, 0.4); } }
-@media (max-width: 860px) {
-  .wrap, .site-inner {
-    background-color: rgba(255, 0, 0, 0.4); } }
-@media (max-width: 740px) {
-  .wrap, .site-inner {
-    background-color: rgba(255, 255, 0, 0.4); } }
-@media (max-width: 600px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 0, 255, 0.4); } }
-@media (max-width: 460px) {
-  .wrap, .site-inner {
-    background-color: rgba(0, 128, 0, 0.4); } }
-
 *::selection {
   background: #E63B2C;
   color: #FFFFFF; }
@@ -505,13 +477,17 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B5BBC5', endColorstr='#D8E0EC',GradientType=0 ); }
   #girl-bacon .wrap {
     position: relative; }
+  @media (max-width: 1024px) {
+    #girl-bacon {
+      overflow: hidden; } }
 
 #bacon-img {
   position: absolute;
   top: 25px;
   right: 0;
   width: 684px;
-  height: 354px;
+  height: 0;
+  padding-bottom: 354px;
   background: url("images/c4b-sprite.png") top left no-repeat; }
   @media (max-width: 1024px) {
     #bacon-img {
@@ -699,6 +675,12 @@ main {
         #call h3 span {
           font-size: 40px;
           line-height: 38px; } }
+  @media (max-width: 460px) {
+    #call h3 {
+      font-size: 30px;
+      line-height: 30px; }
+      #call h3 span {
+        font-size: 35px; } }
 
 #phone-img {
   display: inline-block;
@@ -713,11 +695,9 @@ main {
       position: static;
       margin-top: 10px; } }
 
-#phone-img
 .clearfix:before {
   content: " ";
   display: table; }
-#phone-img
 .clearfix:after {
   clear: both;
   content: " ";
