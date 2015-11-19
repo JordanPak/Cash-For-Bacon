@@ -453,6 +453,7 @@ header {
   background: url("images/c4b-sprite.png") 0 -354px no-repeat; }
 
 #main-content-wrap {
+  margin-bottom: 50px;
   background: #3D3D3D;
   background: -moz-linear-gradient(top, #3D3D3D 0%, #101010 100%);
   background: -webkit-linear-gradient(top, #3D3D3D 0%, #101010 100%);
@@ -514,6 +515,7 @@ main {
     text-transform: none; }
 
 #logo-cta {
+  margin-bottom: 5px;
   text-align: left; }
   #logo-cta:before {
     content: " ";
@@ -531,21 +533,30 @@ main {
   background: url("images/c4b-sprite.png") 0 -950px no-repeat; }
 
 #call {
+  position: relative;
   float: left;
   margin: 6px 0 0 55px;
-  padding: 12px;
+  padding: 8px 20px 8px 110px;
   background: #FFFFFF;
   border: 2px solid #E63B2C;
   -moz-border-radius: 12px;
   border-radius: 12px;
   -moz-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2); }
+  #call h3 {
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    line-height: 45px; }
+    #call h3 span {
+      font-size: 47px;
+      color: #E63B2C;
+      letter-spacing: 0.003em; }
 
 #phone-img {
   display: inline-block;
-  position: relative;
-  top: -42px;
-  left: -40px;
+  position: absolute;
+  top: -30px;
+  left: -26px;
   width: 152px;
   height: 139px;
   background: url("images/c4b-sprite.png") 0 -1055px no-repeat; }
