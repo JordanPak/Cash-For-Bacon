@@ -82,9 +82,9 @@ h1 {
 			line-height: 75px;
 		}
 
-	} // BP: sm
+	} // BP: SM
 
-	@include breakpoint( xs ) {
+	@include breakpoint( xs-sm ) {
 		font-size: 46px;
 
 		span {
@@ -92,7 +92,8 @@ h1 {
 			font-size: 62px;
 			line-height: 58px;
 		}
-	}
+
+	} // BP: XS-SM
 
 } // h1
 
@@ -265,7 +266,23 @@ main {
 			line-height: 28px;
 		}
 
-	} // BP: sm
+	} // BP: SM
+
+	@include breakpoint( xs-sm ) {
+
+		h2 {
+			margin-bottom: 16px;
+			font-size: 54px;
+			line-height: 54px;
+		}
+
+		h3 {
+			margin-bottom: 16px;
+			font-size: 36px;
+			line-height: 34px;
+		}
+
+	} // BP: XS-SM
 
 } // main
 
@@ -284,6 +301,10 @@ main {
 	text-transform: uppercase;
 
 	@include clearfix();
+
+	@include breakpoint( xs-sm ) {
+		margin: 20px 15px;	
+	}
 
 	li {
 		float: left;
