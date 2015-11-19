@@ -9,6 +9,8 @@
 @import 'normalize';
 @import 'variables';
 @import 'mixins';
+@import 'breakpoints';
+
 
 
 // UTILITIES //
@@ -71,10 +73,27 @@ h1 {
 
 // WRAPS //
 .wrap, main {
-	// background: rgba(0,0,255,0.25);
+	// background: rgba(0,0,255,0.25) !important;
 	margin: 0 auto;
 	max-width: 964px;
-}
+
+	@include breakpoint( med-lg ) {
+		max-width: $bp-med-lg-wrap;
+	}
+
+	@include breakpoint( med ) {
+		max-width: $bp-med-wrap;
+	}
+
+	@include breakpoint( sm ) {
+		width: $bp-sm-wrap;
+	}
+
+	@include breakpoint( xs ) {
+		width: $bp-xs-wrap;
+	}
+
+} // .wrap, main
 
 
 // HEADER //
@@ -123,7 +142,7 @@ header {
 	width: 494px;
 	height: 596px;
 	background: $sprite 0 -354px no-repeat;
-}
+} // #girl-img
 
 
 //-- MAIN CONTENT --//
