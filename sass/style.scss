@@ -1,0 +1,268 @@
+/*
+	CASH FOR BACON
+	PSD to HTML Conversion
+	Jordan Pakrosnis
+	11/18/2015
+*/
+
+// INCLUDES //
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+
+
+// UTILITIES //
+*::selection {
+	background: $text-red;
+	color: $white;
+}
+
+*::-moz-selection {
+	background: $text-red;
+	color: $white;
+}
+
+div, header, main {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+div, header, main {
+	display: block;
+}
+
+
+// BODY //
+body {
+	background: $bg-gray-darker;
+	font-family: 'Open Sans', sans-serif;
+	color: $text-gray;
+	text-align: center;
+}
+
+// HEADERS //
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: -0.08em;
+}
+
+h1 {
+	display: block;
+	font-size: 60px;
+	line-height: 40px;
+	font-weight: 600;
+	font-style: italic;
+	text-align: right;
+	color: $text-red;
+
+	span {
+		font-size: 86px;
+		line-height: 85px;
+		color: $text-gray;
+		font-weight: 800;
+		letter-spacing: -0.06em;
+	}
+
+} // h1
+
+
+// WRAPS //
+.wrap, main {
+	// background: rgba(0,0,255,0.25);
+	margin: 0 auto;
+	max-width: 964px;
+}
+
+
+// HEADER //
+header {
+	width: 100%;
+	height: 183px;
+	background-image: $sprite;
+	background-position: bottom;
+
+	.wrap {
+		padding: 32px;
+	}
+
+} // header
+
+
+// GIRL & BACON //
+#girl-bacon {
+	width: 100%;
+	height: 393px;
+	background: $bg-blue-light;
+	background: -moz-linear-gradient( top, $bg-blue-dark 0%, $bg-blue-light 13% );
+	background: -webkit-linear-gradient( top, $bg-blue-dark 0%, $bg-blue-light 13% );
+	background: linear-gradient( to bottom, $bg-blue-dark 0%, $bg-blue-light 13% );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B5BBC5', endColorstr='#D8E0EC',GradientType=0 );
+
+	.wrap {
+		position: relative;
+	}
+
+} // #girl-bacon
+
+#bacon-img {
+	position: absolute;
+	top: 25px;
+	right: 0;
+	width: 684px;
+	height: 354px;
+	background: $sprite top left no-repeat;
+}
+
+#girl-img {
+	position: absolute;
+	top: -172px;
+	left: -65px;
+	width: 494px;
+	height: 596px;
+	background: $sprite 0 -354px no-repeat;
+}
+
+
+//-- MAIN CONTENT --//
+#main-content-wrap {
+	margin-bottom: 50px;
+	background: $bg-gray-dark;
+	background: -moz-linear-gradient( top, $bg-gray-dark 0%, $bg-gray-darker 100% );
+	background: -webkit-linear-gradient( top, $bg-gray-dark 0%, $bg-gray-darker 100% );
+	background: linear-gradient( to bottom, $bg-gray-dark 0%, $bg-gray-darker 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D3D3D', endColorstr='#101010',GradientType=0 );
+}
+
+main {
+	position: relative;
+	top: -20px;
+	padding: 12px;
+	background: $diag-bg-pattern;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	border: 2px solid $black;
+
+	h2 {
+		font-size: 79px;
+		line-height: 79px;
+		color: $text-red;
+	}
+
+	h3 {
+		font-size: 49px;
+		line-height: 58px;
+		letter-spacing: -3px;
+	}
+
+	h4 {
+		font-size: 30px;
+		line-height: 42px;
+		letter-spacing: -1px;
+	}
+
+} // main
+
+
+//-- QUESTIONS --//
+#questions {
+	margin: 12px 15px;
+	padding: 17px 0;
+	border-top: $divider-blue;
+	border-bottom: $divider-blue;
+	list-style-type: none;
+	font-size: 26px;
+	font-weight: 800;
+	line-height: 24px;
+	color: $text-gray;
+	text-transform: uppercase;
+
+	@include clearfix();
+
+	li {
+		float: left;
+		margin: 0 11px;
+		padding: 0;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+
+			span {
+				letter-spacing: -0.03em;
+			}
+		}
+
+	} // li
+
+	span {
+		font-size: 21px;
+		color: $text-red;
+		text-transform: none;
+	}
+
+} // #questions
+
+
+//-- LOGO & CALL TO ACTION --//
+#logo-cta {
+	margin-bottom: 7px;
+	text-align: left;
+
+	@include clearfix();
+}
+
+#logo {
+	float: left;
+	margin: 4px 0 0 30px;
+	width: 346px;
+	height: 105px;
+	background: $sprite 0 -950px no-repeat;
+}
+
+#call {
+	position: relative;
+	float: left;
+	margin: 6px 0 0 55px;
+	padding: 8px 20px 8px 110px;
+	background: $white;
+	border: 2px solid $text-red;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 5px 5px 25px rgba( 0, 0, 0, 0.2 );
+	box-shadow: 5px 5px 25px rgba( 0, 0, 0, 0.2 );
+
+	h3 {
+		font-size: 40px;
+		letter-spacing: -0.02em;
+		line-height: 45px;
+
+		span {
+			font-size: 47px;
+			color: $text-red;
+			letter-spacing: 0.003em;
+		}
+
+	} // h3
+
+} // #call
+
+#phone-img {
+	display: inline-block;
+	position: absolute;
+	top: -30px;
+	left: -26px;
+	width: 152px;
+	height: 139px;
+	background: $sprite 0 -1055px no-repeat;
+}
+
+//-- CLEARFIX --//
+.clearfix {
+	@include clearfix();
+}
