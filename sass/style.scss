@@ -137,18 +137,33 @@ header {
 	width: 684px;
 	height: 354px;
 	background: $sprite top left no-repeat;
-}
+
+	@include breakpoint( med ) {
+		top: 40px;
+		right: -180px;
+	}
+
+	@include breakpoint( sm ) {
+		right: -320px;
+	}
+
+	@include breakpoint( xs ) {
+		right: -440px;
+	}
+
+} // #bacon-img
 
 #girl-img {
 	position: absolute;
 	top: -172px;
 	left: -65px;
 	width: 494px;
-	height: 596px;
+	height: 0;
+	padding-bottom: 596px;
 	background: $sprite 0 -354px no-repeat;
 
 	@include breakpoint( med ) {
-		top: -20px;
+		top: -40px;
 		left: -100px;
 	}
 
