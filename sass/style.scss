@@ -303,7 +303,7 @@ main {
 	@include clearfix();
 
 	@include breakpoint( xs-sm ) {
-		margin: 20px 15px;	
+		margin: 20px 15px;
 	}
 
 	li {
@@ -371,7 +371,13 @@ main {
 	width: 346px;
 	height: 105px;
 	background: $sprite 0 -950px no-repeat;
-}
+
+	@include breakpoint( med ) {
+		float: none;
+		margin: 20px auto;
+	}
+
+} // #logo
 
 #call {
 	position: relative;
@@ -398,6 +404,29 @@ main {
 
 	} // h3
 
+	@include breakpoint( med ) {
+		float: none;
+		margin: 50px auto 20px auto;
+		width: 450px;
+	}
+
+	@include breakpoint( xs ) {
+		width: 90%;
+		padding: 0px 10px 5px 10px;
+		text-align: center;
+
+		h3 {
+			font-size: 34px;
+
+			span {
+				font-size: 40px;
+				line-height: 38px
+			}
+
+		}
+
+	} // BP: XS
+
 } // #call
 
 #phone-img {
@@ -408,7 +437,13 @@ main {
 	width: 152px;
 	height: 139px;
 	background: $sprite 0 -1055px no-repeat;
-}
+
+	@include breakpoint( xs ) {
+		position: static;
+		margin-top: 10px;
+	}
+
+} #phone-img
 
 //-- CLEARFIX --//
 .clearfix {

@@ -660,6 +660,10 @@ main {
   width: 346px;
   height: 105px;
   background: url("images/c4b-sprite.png") 0 -950px no-repeat; }
+  @media (max-width: 1024px) {
+    #logo {
+      float: none;
+      margin: 20px auto; } }
 
 #call {
   position: relative;
@@ -680,6 +684,21 @@ main {
       font-size: 47px;
       color: #E63B2C;
       letter-spacing: 0.003em; }
+  @media (max-width: 1024px) {
+    #call {
+      float: none;
+      margin: 50px auto 20px auto;
+      width: 450px; } }
+  @media (max-width: 600px) {
+    #call {
+      width: 90%;
+      padding: 0px 10px 5px 10px;
+      text-align: center; }
+      #call h3 {
+        font-size: 34px; }
+        #call h3 span {
+          font-size: 40px;
+          line-height: 38px; } }
 
 #phone-img {
   display: inline-block;
@@ -689,10 +708,16 @@ main {
   width: 152px;
   height: 139px;
   background: url("images/c4b-sprite.png") 0 -1055px no-repeat; }
+  @media (max-width: 600px) {
+    #phone-img {
+      position: static;
+      margin-top: 10px; } }
 
+#phone-img
 .clearfix:before {
   content: " ";
   display: table; }
+#phone-img
 .clearfix:after {
   clear: both;
   content: " ";
