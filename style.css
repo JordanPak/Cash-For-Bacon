@@ -392,6 +392,9 @@ th {
 @media (max-width: 860px) {
   .wrap, .site-inner {
     background-color: rgba(255, 0, 0, 0.4); } }
+@media (max-width: 740px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 255, 0, 0.4); } }
 @media (max-width: 600px) {
   .wrap, .site-inner {
     background-color: rgba(0, 0, 255, 0.4); } }
@@ -608,6 +611,21 @@ main {
       margin-right: 0; }
       #questions li:last-child span {
         letter-spacing: -0.03em; }
+    @media (max-width: 1024px) {
+      #questions li {
+        margin: 14px 0;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 45%; }
+        #questions li:first-child, #questions li:last-child {
+          margin-left: 2.5%;
+          margin-right: 2.5%; } }
+    @media (max-width: 740px) {
+      #questions li {
+        margin: 16px 0;
+        width: 100%; }
+        #questions li:first-child, #questions li:last-child {
+          margin: 16px 0; } }
   #questions span {
     font-size: 21px;
     color: #E63B2C;

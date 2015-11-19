@@ -15,6 +15,7 @@
     $bp-med-lg:			1080px;
     $bp-med:			1024px;
     $bp-sm:				860px;
+	$bp-xs-sm:			740px;		// Added for Questions
     $bp-xs:				600px;
     $bp-xxs:			460px;
 
@@ -43,6 +44,9 @@
     @if $class == xs {
         @media (max-width: $bp-xs) { @content; }
     }
+	@if $class == xs-sm {
+		@media (max-width: $bp-xs-sm) { @content; }
+	}
     @if $class == sm {
         @media ( max-width: $bp-sm) { @content; }
     }
@@ -90,6 +94,9 @@
     @include breakpoint( sm ) {
         background-color: rgba(red, .4);
     }
+	@include breakpoint( xs-sm ) {
+		background-color: rgba(yellow, .4);
+	}
     @include breakpoint( xs ) {
         background-color: rgba(blue, .4);
     }

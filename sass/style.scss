@@ -302,6 +302,29 @@ main {
 			}
 		}
 
+		@include breakpoint( med ) {
+			margin: 14px 0;
+			margin-left: 2.5%;
+			margin-right: 2.5%;
+			width: 45%;
+
+			&:first-child, &:last-child {
+				margin-left: 2.5%;
+				margin-right: 2.5%;
+			}
+
+		} // BP: Med
+
+		@include breakpoint( xs-sm ) {
+			margin: 16px 0;
+			width: 100%;
+
+			&:first-child, &:last-child {
+				margin: 16px 0;
+			}
+
+		} // BP: XS-SM
+
 	} // li
 
 	span {
